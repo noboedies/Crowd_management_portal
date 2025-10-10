@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — DivineFlow</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">DivineFlow</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"><span class="hamburger"></span></button>
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="dashboard.html">Temple Dashboard</a></li>
+          <li><a href="emergency.html">Emergency</a></li>
+          <li><a href="volunteer.html">Volunteers</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Contact & Feedback</h1>
+      <p>Questions, partnerships, or feedback? Send us a message.</p>
+
+      <form class="form card" id="contactForm" aria-label="Contact form">
+        <div class="form-row">
+          <label for="cname">Name</label>
+          <input id="cname" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="cemail">Email</label>
+          <input id="cemail" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="cmessage">Message</label>
+          <textarea id="cmessage" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-row">
+          <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>DivineFlow</strong></div>
+      <div class="credits">© <span id="year7"></span> DivineFlow</div>
+    </div>
+  </footer>
+</body>
+</html>

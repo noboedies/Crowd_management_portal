@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DivineFlow — Smart Crowd Management</title>
+  <link rel="shortcut icon" href="https://images.pexels.com/photos/965208/pexels-photo-965208.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Poppins:wght@600;300&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-image: linear-gradient(rgba(65, 59, 59, 0.563), rgba(96, 78, 78, 0.563)), url("https://images.pexels.com/photos/32619517/pexels-photo-32619517.jpeg") !important;
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="DivineFlow home">
+        <svg class="temple-icon" viewBox="0 0 64 64" width="40" height="40" aria-hidden="true">
+          <path fill="#F4A300" d="M32 2 L12 18h6v10H10v6h44v-6h-8V18h6z"/>
+          <circle cx="32" cy="40" r="6" fill="#D98E04"/>
+        </svg>
+        <span id="logo" class="brand-text">DivineFlow</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="dashboard.html">Temple Dashboard</a></li>
+          <li><a href="emergency.html">Emergency</a></li>
+          <li><a href="volunteer.html">Volunteers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="auth-buttons">
+        <a class="btn btn-outline" href="volunteer.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Smart Crowd Management for Pilgrimage Sites</h1>
+          <p style="color: rgba(8, 8, 8, 0.849);">Peaceful darshan — safe routes — informed pilgrims. Real-time monitoring, queue systems, and emergency readiness for India's holy sites.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="dashboard.html">View Temple Dashboard</a>
+            <a class="btn btn-ghost" href="solutions.html">Explore Solutions</a>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <div class="status-card" aria-live="polite">
+            <h3>Live Crowd Snapshot</h3>
+            <div class="density-pill low">Low</div>
+            <p>Somnath — 3,452 visitors (2% ↑)</p>
+            <a class="link" href="dashboard.html#somnath">View details →</a>
+          </div>
+
+          <div class="status-card">
+            <h3>Next Slot</h3>
+            <p>Tirupati Darshan Slot: 11:30 AM — Booked</p>
+            <a class="link" href="dashboard.html#tirupati">Reserve token →</a>
+          </div>
+
+          <div class="status-card">
+            <h3>Safety Alerts</h3>
+            <p class="muted">No current critical alerts</p>
+            <a class="link" href="emergency.html">Emergency plan →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features container">
+      <h2 class="section-title">How DivineFlow Helps</h2>
+      <div class="grid grid-4">
+        <article class="feature">
+          <div class="icon">🔭</div>
+          <h4>Real-time Monitoring</h4>
+          <p>CCTV + AI-based heatmaps for crowd density.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">🎟️</div>
+          <h4>Digital Token System</h4>
+          <p>Book darshan slots to reduce queueing and congestion.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">🛰️</div>
+          <h4>Aerial Surveillance</h4>
+          <p>Drone feeds for large gatherings and route checks.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">🚨</div>
+          <h4>Emergency Response</h4>
+          <p>One-click alerts and volunteer coordination.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Major temples preview -->
+    <section class="temples-preview container">
+      <h2 class="section-title">Major Pilgrimage Sites</h2>
+      <div class="grid grid-3">
+        <!-- Card for each major temple -->
+        <article class="temple-card" id="somnath">
+          <img src="https://via.placeholder.com/400x220?text=Somnath" alt="Somnath Temple photo" loading="lazy">
+          <div class="card-body">
+            <h3>Somnath</h3>
+            <p>Live density: <span class="density low">Low</span></p>
+            <p>Queue estimate: 20 mins</p>
+            <a href="dashboard.html#somnath" class="btn btn-sm">Open Dashboard</a>
+          </div>
+        </article>
+
+        <article class="temple-card" id="dwarka">
+          <img src="https://via.placeholder.com/400x220?text=Dwarka" alt="Dwarka temple" loading="lazy">
+          <div class="card-body">
+            <h3>Dwarka</h3>
+            <p>Live density: <span class="density medium">Medium</span></p>
+            <p>Queue estimate: 35 mins</p>
+            <a href="dashboard.html#dwarka" class="btn btn-sm">Open Dashboard</a>
+          </div>
+        </article>
+
+        <article class="temple-card" id="varanasi">
+          <img src="https://via.placeholder.com/400x220?text=Varanasi" alt="Varanasi" loading="lazy">
+          <div class="card-body">
+            <h3>Varanasi</h3>
+            <p>Live density: <span class="density high">High</span></p>
+            <p>Queue estimate: 50 mins</p>
+            <a href="dashboard.html#varanasi" class="btn btn-sm">Open Dashboard</a>
+          </div>
+        </article>
+      </div>
+      <p class="muted small">Click any temple to view full dashboard and booking options.</p>
+    </section>
+
+    <section class="cta container">
+      <div class="cta-inner">
+        <h3>Want to join as a volunteer?</h3>
+        <a class="btn btn-secondary" href="volunteer.html">Volunteer Portal</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>DivineFlow</strong>
+        <p>Making pilgrimage safer, smarter & sustainable.</p>
+      </div>
+      <nav>
+        <a href="privacy.html" class="link-muted">Privacy</a>
+        <a href="contact.html" class="link-muted">Contact</a>
+      </nav>
+      <div class="credits">
+        © <span id="year"></span> DivineFlow
+      </div>
+    </div>
+  </footer>
+</body>
+<script defer src="js/main.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Temple Dashboard — DivineFlow</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">DivineFlow</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"><span class="hamburger"></span></button>
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a class="active" href="dashboard.html">Temple Dashboard</a></li>
+          <li><a href="emergency.html">Emergency</a></li>
+          <li><a href="volunteer.html">Volunteers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Temple Dashboard</h1>
+      <p class="muted">Select a temple to view live density, queue estimates, booking & emergency contacts.</p>
+
+      <!-- Temple selector -->
+      <div class="temple-list">
+        <!-- Major temples sample -->
+        <button class="temple-btn" data-temple="tirupati">Tirupati</button>
+        <button class="temple-btn" data-temple="varanasi">Varanasi</button>
+        <button class="temple-btn" data-temple="puri">Puri</button>
+        <button class="temple-btn" data-temple="vaishnodevi">Vaishno Devi</button>
+        <button class="temple-btn" data-temple="somnath">Somnath</button>
+        <button class="temple-btn" data-temple="dwarka">Dwarka</button>
+        <button class="temple-btn" data-temple="kedarnath">Kedarnath</button>
+        <button class="temple-btn" data-temple="amarnath">Amarnath</button>
+      </div>
+
+      <!-- Dashboard cards -->
+      <div id="dashboard-area" class="grid grid-3">
+        <section class="dashboard-card">
+          <h3 id="temple-name">Select a temple</h3>
+          <p id="temple-status">Live density: —</p>
+          <div class="placeholder-map" aria-hidden="true">
+            <!-- Replace with Google Maps iframe or Mapbox -->
+            <p>Map placeholder — integrate maps API here</p>
+          </div>
+          <div class="mini-stats">
+            <div><strong>Queue</strong><p id="queue-est">+4500</p></div>
+            <div><strong>Avg Wait</strong><p id="avg-wait">—</p></div>
+            <div><strong>Volunteers</strong><p id="vol-count">—</p></div>
+          </div>
+        </section>
+
+        <section class="dashboard-card">
+          <h3>Live Crowd Trend</h3>
+          <!-- Placeholder for chart -->
+          <canvas id="crowdChart" width="400" height="200" aria-label="Crowd trend chart"></canvas>
+          <p class="muted small">Chart placeholder — integrate Chart.js or similar for real data.</p>
+        </section>
+
+        <section class="dashboard-card">
+          <h3>Actions</h3>
+          <div class="action-list">
+            <button class="btn btn-primary">Send Alert</button>
+            <button class="btn btn-outline">Assign Volunteers</button>
+            <button class="btn btn-ghost">Open Tokening</button>
+            <a href="emergency.html" class="link">Emergency Protocols →</a>
+          </div>
+        </section>
+      </div>
+
+      <section class="section">
+        <h2>Temple Quick Stats</h2>
+        <div class="grid grid-4">
+          <div class="stat">
+            <h4>Today Visitors</h4>
+            <p id="stat-visitors">—</p>
+          </div>
+          <div class="stat">
+            <h4>Peak Hour</h4>
+            <p id="stat-peak">—</p>
+          </div>
+          <div class="stat">
+            <h4>Tickets Issued</h4>
+            <p id="stat-tickets">—</p>
+          </div>
+          <div class="stat">
+            <h4>Incidents</h4>
+            <p id="stat-incidents">—</p>
+          </div>
+        </div>
+        <p class="muted small">Note: All values above are placeholders. Hook with APIs to show live metrics.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>DivineFlow</strong></div>
+      <div class="credits">© <span id="year4"></span> DivineFlow</div>
+    </div>
+  </footer>
+</body>
+</html>

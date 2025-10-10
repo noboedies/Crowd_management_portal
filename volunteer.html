@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Volunteer — DivineFlow</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">DivineFlow</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"><span class="hamburger"></span></button>
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="dashboard.html">Temple Dashboard</a></li>
+          <li><a href="emergency.html">Emergency</a></li>
+          <li><a class="active" href="volunteer.html">Volunteers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Volunteer Portal</h1>
+      <p>Join our volunteer network to help manage pilgrim flow during events and busy days.</p>
+
+      <form class="form card" id="volForm" aria-label="Volunteer signup">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your full name">
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required placeholder="+91">
+        </div>
+        <div class="form-row">
+          <label for="temple-select">Preferred Location</label>
+          <select id="temple-select" name="temple">
+            <option value="tirupati">Tirupati</option>
+            <option value="varanasi">Varanasi</option>
+            <option value="puri">Puri</option>
+            <option value="vaishnodevi">Vaishno Devi</option>
+            <option value="somnath">Somnath</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <button class="btn btn-primary" type="submit">Register</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>DivineFlow</strong></div>
+      <div class="credits">© <span id="year5"></span> DivineFlow</div>
+    </div>
+  </footer>
+</body>
+</html>
